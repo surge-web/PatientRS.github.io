@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="login.css">
+<img src="mylogo.png">
+<center><div class="classone">
+
+	<br>
+	<label id="sign">SIGN IN</label>
+	<br>
+	<br>
+	<br>
+	<label>Email:</label>
+
+	<input type="text" id="username" placeholder="Username">
+	<br>
+	<br>
+	<br>	
+	<label>Password:</label>
+	<input type="password" placeholder="Password" id="myInput" style="width: 200px; height: 25px; border-radius: 6px; border-color: hotpink;">
+	<br>
+	<input type="checkbox" onclick="myFunction()" style="margin-left: 150px;">Show Password
+	<br>
+	<br>
+	<br>
+	<button type="submit" id="login"><a href="dashboard.html">Login</button></a>
+	<br>
+	<br>
+	<p style="color: blue;">Forgot Password?</p>
+</div>
+<h1>Patient Record System</h1>
+<p id="des">Patient Record System manages and stores patient <br>health information.</p>
+</body>
+</html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
